@@ -16,6 +16,5 @@ return {
   -- { import = "astrocommunity.pack.c" },
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }

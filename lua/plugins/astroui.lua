@@ -19,11 +19,11 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
-        Normal = { ctermbg = NONE },
+        -- Normal = { ctermbg = NONE },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
-        Normal = { ctermbg = NONE },
+        -- Normal = { ctermbg = NONE },
       },
     },
     -- Icons can be configured throughout the interface
