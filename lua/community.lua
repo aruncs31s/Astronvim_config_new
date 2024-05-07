@@ -11,10 +11,11 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.note-taking.obsidian-nvim" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.bash" },
-  -- { import = "astrocommunity.pack.c" },
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
