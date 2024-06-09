@@ -18,4 +18,5 @@ return {
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
 }
