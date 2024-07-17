@@ -12,6 +12,23 @@ return {
   vim.api.nvim_set_keymap("n", "<A-l>", ":bn<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-t>", ":Telescope todo-comments<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-T>", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true }),
+
+  -- Obsidian
+
+  vim.api.nvim_set_keymap("n", "<Leader>of", ":ObsidianSearch<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<Leader>ol", ":ObsidianFollowLink<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<Leader>oo", ":ObsidianOpen<CR>", { noremap = true, silent = true }),
+
+  vim.api.nvim_set_keymap("n", "<Leader>op", ":ObsidianPasteImg<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<A-q>", ":bd<CR>", { noremap = true, silent = true }),
+
+  -- Quick Fix
+
+  vim.api.nvim_set_keymap("n", "<Leader>qn", ":cnext<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<Leader>qq", ":cclose<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<Leader>qo", ":copen<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<Leader>qp", ":cprevious<CR>", { noremap = true, silent = true }),
+
   --- Visual
   vim.api.nvim_set_keymap("v", "<A-h>", ":bp<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("v", "<A-l>", ":bn<CR>", { noremap = true, silent = true }),
