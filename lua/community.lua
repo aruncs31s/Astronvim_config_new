@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.bash" },
@@ -19,4 +20,6 @@ return {
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 }

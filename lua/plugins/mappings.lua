@@ -2,7 +2,7 @@ return {
   -- All the custom mapping to make Telescope easy
   vim.api.nvim_set_keymap("n", "<A-b>", ":Telescope buffers<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-w>", ":Telescope live_grep<CR>", { noremap = true, silent = true }),
-  vim.api.nvim_set_keymap("n", "<A-f>", ":Telescope current_buffer_fuzzy_find<CR>", { noremap = true, silent = true }),
+  -- vim.api.nvim_set_keymap("n", "<A-f>", ":Telescope current_buffer_fuzzy_find<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-o>", ":Telescope oldfiles<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-d>", ":Telescope find_files<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-z>", ":Telescope zoxide list<CR>", { noremap = true, silent = true }),
@@ -11,7 +11,7 @@ return {
   vim.api.nvim_set_keymap("n", "<A-h>", ":bp<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-l>", ":bn<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-t>", ":Telescope todo-comments<CR>", { noremap = true, silent = true }),
-  vim.api.nvim_set_keymap("n", "<A-T>", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<A-t>", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true }),
 
   -- Obsidian
 
@@ -23,7 +23,7 @@ return {
   vim.api.nvim_set_keymap("n", "<A-q>", ":bd<CR>", { noremap = true, silent = true }),
 
   -- Quick Fix
-
+  -- Control e to select the jump list
   vim.api.nvim_set_keymap("n", "<Leader>qn", ":cnext<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<Leader>qq", ":cclose<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<Leader>qo", ":copen<CR>", { noremap = true, silent = true }),
@@ -39,5 +39,8 @@ return {
   -- Map Alt+> to Ctrl-i
   -- vim.api.nvim_set_keymap("n", "gi", "<C-i>", { noremap = true, silent = true }),
 
+  --
   -- Map Alt+< to Ctrl-o
+  -- This jump thing current is not working for me so i just gonna use the control i and control o for the moment ..
+  --
 }
