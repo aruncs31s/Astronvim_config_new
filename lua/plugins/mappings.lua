@@ -1,4 +1,5 @@
 return {
+  -- probleme
   -- All the custom mapping to make Telescope easy
   vim.api.nvim_set_keymap("n", "<A-b>", ":Telescope buffers<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-w>", ":Telescope live_grep<CR>", { noremap = true, silent = true }),
@@ -11,7 +12,6 @@ return {
   vim.api.nvim_set_keymap("n", "<A-h>", ":bp<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-l>", ":bn<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<A-t>", ":Telescope todo-comments<CR>", { noremap = true, silent = true }),
-  vim.api.nvim_set_keymap("n", "<A-t>", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true }),
 
   -- Obsidian
 
