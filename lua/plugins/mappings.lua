@@ -23,7 +23,7 @@ return {
   vim.api.nvim_set_keymap("n", "<A-q>", ":bd<CR>", { noremap = true, silent = true }),
 
   -- Quick Fix
-  -- Control e to select the jump list
+  -- use Ctrl + q to add and , Tab to select multiple when using Telescope
   vim.api.nvim_set_keymap("n", "<Leader>qn", ":cnext<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<Leader>qq", ":cclose<CR>", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap("n", "<Leader>qo", ":copen<CR>", { noremap = true, silent = true }),
@@ -42,5 +42,14 @@ return {
   --
   -- Map Alt+< to Ctrl-o
   -- This jump thing current is not working for me so i just gonna use the control i and control o for the moment ..
+
   --
+  -- Jump to definition and spliting it
+  -- TODO: Check whether if any other function is mapped to gv and gh
+  vim.api.nvim_set_keymap("n", "gv", ":vsplit | normal gd<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "gh", ":split | normal gd<CR>", { noremap = true, silent = true }),
+
+  -- Tabs
+  vim.api.nvim_set_keymap("n", "<A-]>", ":tabnext<CR>", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap("n", "<A-[>", ":tabNext<CR>", { noremap = true, silent = true }),
 }
